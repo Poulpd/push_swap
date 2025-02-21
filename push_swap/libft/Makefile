@@ -48,29 +48,12 @@ FTSTR_DIR		=	$(SRC_DIR)ft_str/ft_split.c \
 					$(SRC_DIR)ft_str/ft_strtrim.c \
 					$(SRC_DIR)ft_str/ft_substr.c 
 
-FTLST_DIR		=	$(SRC_DIR)ft_lst/ft_lstadd_back.c \
-					$(SRC_DIR)ft_lst/ft_lstadd_front.c \
-					$(SRC_DIR)ft_lst/ft_lstclear.c \
-					$(SRC_DIR)ft_lst/ft_lstdelone.c \
-					$(SRC_DIR)ft_lst/ft_lstiter.c \
-					$(SRC_DIR)ft_lst/ft_lstlast.c \
-					$(SRC_DIR)ft_lst/ft_lstmap.c \
-					$(SRC_DIR)ft_lst/ft_lstnew.c \
-					$(SRC_DIR)ft_lst/ft_lstsize.c 
-
 FTPRINTF_DIR	=	$(SRC_DIR)ft_printf/ft_printf.c \
-					$(SRC_DIR)ft_printf/ft_handle_char.c \
-					$(SRC_DIR)ft_printf/ft_handle_string.c \
-					$(SRC_DIR)ft_printf/ft_handle_int.c \
-					$(SRC_DIR)ft_printf/ft_handle_unsigned.c \
-					$(SRC_DIR)ft_printf/ft_handle_pointer.c	\
-					$(SRC_DIR)ft_printf/ft_handle_hex.c \
-					$(SRC_DIR)ft_printf/ft_handle_percent.c \
 					$(SRC_DIR)ft_printf/ft_printf_utils.c
 
 GNL_DIR			=	$(SRC_DIR)get_next_line/get_next_line.c 
 
-SRC 			= $(FTIS_DIR) $(FTMEM_DIR) $(FTPUT_DIR) $(FTTO_DIR) $(FTTO_DIR) $(FTSTR_DIR) $(FTLST_DIR) $(FTPRINTF_DIR) $(GNL_DIR)
+SRC 			= $(FTIS_DIR) $(FTMEM_DIR) $(FTPUT_DIR) $(FTTO_DIR) $(FTTO_DIR) $(FTSTR_DIR) $(FTPRINTF_DIR) $(GNL_DIR)
 
 OBJ 			= $(patsubst $(SRC_DIR)%.c,$(OBJ_DIR)%.o,$(SRC))
 

@@ -39,7 +39,6 @@ all: 				$(NAME)
 $(NAME): 			$(OBJ) $(LIBFT)
 					@$(CC) $(CFLAGS) $(INC) $(OBJ) $(LIBFT) -o $(NAME)
 
-# Compile object files from source files
 $(OBJ_DIR)%.o:		$(SRC_DIR)%.c 
 					@mkdir -p $(@D)
 					@$(CC) $(CFLAGS) $(INC) -c $< -o $@

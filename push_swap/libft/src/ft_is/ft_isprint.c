@@ -8,7 +8,7 @@
 /*   Created: 2024/11/22 09:26:20 by damohen           #+#    #+#             */
 /*   Updated: 2024/11/22 09:26:46 by damohen          ###   ########.fr       */
 /*                                                                            */
-#include "../../inc/libft.h"#include "libft.h"
+#include "../../inc/libft.h"
 
 int	ft_isprint(int c)
 {
